@@ -3,7 +3,7 @@ class Spaceship extends Floater
   //your code here
   public Spaceship() {
     corners= 40;
-    myColor= color((int)(Math.random()*256), (int)(Math.random()*226), (int)(Math.random()*156));
+    myColor= color((int)(Math.random()*206), (int)(Math.random()*226), (int)(Math.random()*156));
     myCenterX=250;
     myCenterY=250;
     xCorners = new int[corners];
@@ -91,6 +91,10 @@ class Spaceship extends Floater
     myXspeed = ((int)Math.random()*7);
     myYspeed = ((int)Math.random()*5);
   }
+ public double getX(){return myCenterX;}
+ public double getY(){return myCenterY;}
+ public double getPointDirection(){return myPointDirection;}
+
   public void hyperspace() {
     myCenterX = Math.random()*500;
     myCenterY = Math.random()*500;
